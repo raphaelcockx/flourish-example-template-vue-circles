@@ -4,7 +4,8 @@ const app = new Vue({
   el: '#app',
   data() {
     return {
-      flourishState: {}
+      flourishState: {},
+      flourishData: {}
     }
   }
 })
@@ -33,5 +34,7 @@ export function update() {
 export function draw() {
   // The draw function is called when the template first loads
   app.flourishState = state
+  app.flourishData = data
+
   update()
 }
