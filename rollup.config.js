@@ -12,7 +12,6 @@ export default {
     sourcemap: true,
   },
   plugins: [
-    //terser(),
     replace({
       'process.env.NODE_ENV': JSON.stringify('development'),
       'process.env.VUE_ENV': JSON.stringify('browser')
@@ -23,6 +22,7 @@ export default {
       ]
     }),
     nodeResolve(),
+    terser()
   ],
   /* Cyclic dependencies are allowed in ES6, and such imports occur
      in many d3 components, so suppress those rollup warnings. */
