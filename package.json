@@ -1,6 +1,6 @@
 {
   "name": "flourish-template-vue-test",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Adding a dash of Vue to Flourish",
   "main": "template.js",
   "author": "Raphael Cockx",
