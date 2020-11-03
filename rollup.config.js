@@ -13,7 +13,7 @@ export default {
   },
   plugins: [
     replace({
-      'process.env.NODE_ENV': JSON.stringify('development'),
+      'process.env.NODE_ENV': JSON.stringify('production'),
       'process.env.VUE_ENV': JSON.stringify('browser')
     }),
     alias({
