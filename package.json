@@ -13,10 +13,10 @@
     "less": "lessc --plugin=less-plugin-clean-css --source-map less/style.less static/style.css"
   },
   "dependencies": {
-    "less": "^3.0.1",
+    "less": "^3.12.2",
     "less-plugin-clean-css": "^1.5.1",
-    "rollup": "^1.16.2",
-    "rollup-plugin-node-resolve": "^5.1.0",
-    "rollup-plugin-uglify": "^6.0.2"
+    "rollup": "^2.33.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2"
   }
 }

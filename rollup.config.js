@@ -1,5 +1,5 @@
 import nodeResolve from "rollup-plugin-node-resolve";
-import { uglify } from "rollup-plugin-uglify";
+import { terser } from "rollup-plugin-terser";
 
 export default {
   input: "src/index.js",
@@ -11,7 +11,7 @@ export default {
   },
   plugins: [
     nodeResolve(),
-    uglify(),
+    terser(),
   ],
   /* Cyclic dependencies are allowed in ES6, and such imports occur
      in many d3 components, so suppress those rollup warnings. */
