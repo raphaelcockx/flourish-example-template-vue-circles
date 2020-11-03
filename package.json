@@ -1,9 +1,9 @@
 {
-  "name": "untitled_flourish_template",
+  "name": "flourish-template-vue-test",
   "version": "1.0.0",
-  "description": "A template for use on flourish.studio",
+  "description": "Adding a dash of Vue to Flourish",
   "main": "template.js",
-  "author": "Unknown author",
+  "author": "Raphael Cockx",
   "license": "ISC",
   "keywords": [
     "flourish"
