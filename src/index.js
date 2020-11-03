@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import App from './App.vue'
 
 export var data = {};
 // If your template includes data tables, use this variable to access the data.
@@ -23,15 +24,15 @@ export function update() {
 
 export function draw() {
   // The draw function is called when the template first loads
-  new Vue({
-    el: '#app',
-    data() {
-      return {
-        state,
-        data
-      }
-    }
-  })
+  const app = new Vue({
+    data: {
+      data,
+      state
+    },
+    render: (h) => h(App)
+  });
+
+  app.$mount('#app');
 
   update()
 }

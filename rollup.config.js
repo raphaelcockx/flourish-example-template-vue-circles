@@ -1,7 +1,8 @@
 import nodeResolve from "rollup-plugin-node-resolve";
 import { terser } from "rollup-plugin-terser";
-import  replace from '@rollup/plugin-replace';
-import alias from '@rollup/plugin-alias';
+import replace from '@rollup/plugin-replace';
+import vue from 'rollup-plugin-vue';
+import commonjs from '@rollup/plugin-commonjs';
 
 export default {
   input: "src/index.js",
@@ -13,16 +14,12 @@ export default {
   },
   plugins: [
     replace({
-      'process.env.NODE_ENV': JSON.stringify('production'),
-      'process.env.VUE_ENV': JSON.stringify('browser')
-    }),
-    alias({
-      entries: [
-        { find: 'vue', replacement: 'vue/dist/vue.esm.js'}
-      ]
+      'process.env.NODE_ENV': JSON.stringify('development')
     }),
     nodeResolve(),
-    terser()
+    vue(),
+    commonjs(),
+    terser(),
   ],
   /* Cyclic dependencies are allowed in ES6, and such imports occur
      in many d3 components, so suppress those rollup warnings. */
