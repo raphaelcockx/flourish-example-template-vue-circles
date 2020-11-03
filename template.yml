@@ -1,8 +1,8 @@
 # The 'id' should be a string that uniquely identifies your template
-id: ''
-name: Untitled template
-description: A Flourish template
-author: Unknown author
+id: 'rc-test-vue'
+name: Adding a dash of Vue to Flourish
+description: A Flourish template by Raphael Cockx
+author: Raphael Cockx
 
 # This template is compatible with SDK version 3
 sdk_version: 3
@@ -37,11 +37,15 @@ settings:
   # • "boolean" >> gives a checkbox
   # • "color" >> gives a color picker
 
-  - Section title # Headings can be used to break up the settings into collapsible sections
+  - Basic properties # Headings can be used to break up the settings into collapsible sections
   - property: example_state_property # Refers to a property in the template's state object
     name: Example number setting # Display name for the settings panel
     description: A setting for changing a number # Optional description for the settings panel
     type: number # See available types above
+  - property: background_colour
+    name: Background colour
+    description: Make it pretty
+    type: color
 
 data:
   # The data section determines how data is made available to your template,
