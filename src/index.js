@@ -1,15 +1,5 @@
 import Vue from 'vue'
 
-const app = new Vue({
-  el: '#app',
-  data() {
-    return {
-      flourishState: {},
-      flourishData: {}
-    }
-  }
-})
-
 export var data = {};
 // If your template includes data tables, use this variable to access the data.
 // Each of the 'datasets' in data.json file will be available as properties of the data.
@@ -33,8 +23,15 @@ export function update() {
 
 export function draw() {
   // The draw function is called when the template first loads
-  app.flourishState = state
-  app.flourishData = data
+  new Vue({
+    el: '#app',
+    data() {
+      return {
+        state,
+        data
+      }
+    }
+  })
 
   update()
 }

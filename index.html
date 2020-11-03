@@ -10,9 +10,9 @@
 	</head>
 	<body>
 		<div id="app">
-			<p>Hello {{ flourishState.name }}</p>
+			<p>Hello {{ state.name }}</p>
 
-			<div v-for="entry in flourishData.data">
+			<div v-for="entry in data.fruits">
 				<p><strong>{{ entry.label }}</strong>: {{ entry.value }}</p>
   		</div>
 

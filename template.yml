@@ -55,11 +55,11 @@ data:
   # and the sample data that is used. See the documentation.
   - key: label # Property name in the dataset
     name: Label # Name to be displayed in the editor
-    dataset: data # Name of dataset
+    dataset: fruits # Name of dataset
     type: column # Are we selecting a single or multiple columns
-    column: "Data::A" # Which column should be selected 
+    column: "Fruits::A" # Which column should be selected 
   - key: value
     name: Value
-    dataset: data
+    dataset: fruits
     type: column
-    column: "Data::B"
+    column: "Fruits::B"
