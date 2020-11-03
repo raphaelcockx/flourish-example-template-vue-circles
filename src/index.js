@@ -1,3 +1,14 @@
+import Vue from 'vue'
+
+const app = new Vue({
+  el: '#app',
+  data() {
+    return {
+      'hello': 'World'
+    }
+  }
+})
+
 export var data = {};
 // If your template includes data tables, use this variable to access the data.
 // Each of the 'datasets' in data.json file will be available as properties of the data.
