@@ -42,6 +42,9 @@ settings:
     name: Example number setting # Display name for the settings panel
     description: A setting for changing a number # Optional description for the settings panel
     type: number # See available types above
+  - property: name
+    name: Your name
+    type: string
   - property: background_colour
     name: Background colour
     description: Make it pretty

@@ -4,7 +4,7 @@ const app = new Vue({
   el: '#app',
   data() {
     return {
-      'hello': 'World'
+      flourishState: {}
     }
   }
 })
@@ -15,7 +15,8 @@ export var data = {};
 
 export var state = {
   example_state_property: 25,
-  background_colour: '#ff0000'
+  background_colour: '#ff0000',
+  name: 'world'
   // The current state of template. You can make some or all of the properties
   // of the state object available to the user as settings in settings.js.
 };
@@ -31,5 +32,6 @@ export function update() {
 
 export function draw() {
   // The draw function is called when the template first loads
+  app.flourishState = state
   update()
 }
