@@ -12,12 +12,6 @@
 <script>
 export default {
   name: 'App',
-  data() {
-    const { data, state } = this.$root
-    return {
-      data,
-      state
-    }
-  }
+  props: ['data', 'state']
 }
 </script>

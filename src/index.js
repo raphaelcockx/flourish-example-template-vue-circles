@@ -29,7 +29,12 @@ export function draw() {
       data,
       state
     },
-    render: (h) => h(App)
+    render: (h) => h(App, {
+      props: {
+        data,
+        state
+      }
+    })
   });
 
   app.$mount('#app');
