@@ -12,9 +12,9 @@ build:
     files:
       - rollup.config.js
 
-  less:
-    script: npm run less
-    directory: less
+  sass:
+    script: npm run sass
+    directory: sass
 
 settings:
   - property: name
