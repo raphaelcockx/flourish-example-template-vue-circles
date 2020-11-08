@@ -20,6 +20,9 @@ settings:
   - property: name
     name: Your name
     type: string
+  - property: numCircles
+    name: Number of circles
+    type: number
 
 data:
   - key: label

@@ -1,10 +1,11 @@
 import Vue from 'vue'
-import App from './App.vue'
+import Circles from './Circles.vue'
 
 export var data = {}
 
 export var state = {
-  name: 'world'
+  name: 'world',
+  numCircles: 25
 }
 
 export function update() {}
@@ -15,7 +16,7 @@ export function draw() {
       data,
       state
     },
-    render: (h) => h(App, {
+    render: (h) => h(Circles, {
       props: {
         data,
         state
