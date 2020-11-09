@@ -1,5 +1,5 @@
 {
-  "name": "flourish-template-vue-test",
+  "name": "flourish-example-template-vue-circles",
   "version": "0.5.0",
   "description": "Adding a dash of Vue to Flourish",
   "main": "template.js",
