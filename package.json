@@ -9,7 +9,7 @@
     "flourish"
   ],
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c --environment BUILD:production",
     "less": "lessc --plugin=less-plugin-clean-css --source-map less/style.less static/style.css",
     "sass": "sass sass/style.scss static/style.css"
   },
