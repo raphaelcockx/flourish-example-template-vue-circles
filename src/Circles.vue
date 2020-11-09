@@ -15,6 +15,7 @@ import Velocity from 'velocity-animate'
   
 export default {
   name: 'app',
+  // We don't use data in this example, so although it gets passed to the component, we don't declare it here
   props: ['state'],
   data () {
     return {

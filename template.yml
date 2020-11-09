@@ -1,6 +1,6 @@
-id: 'rc-test-vue'
+id: rc-test-vue
 name: Adding a dash of Vue to Flourish
-description: A Flourish template by Raphael Cockx
+description: A template that shows how to integrate Vue with Flourish
 author: Raphael Cockx
 
 sdk_version: 3
@@ -20,3 +20,8 @@ settings:
   - property: numCircles
     name: Number of circles
     type: number
+
+data:
+  # The data section determines how data is made available to your template,
+  # and the sample data that is used. See the documentation. As is the case for
+  # state (settings above), data will be available as a prop in your Vue app
