@@ -12,26 +12,11 @@ build:
     files:
       - rollup.config.js
 
-  sass:
-    script: npm run sass
-    directory: sass
+  less:
+    script: npm run less
+    directory: less
 
 settings:
-  - property: name
-    name: Your name
-    type: string
   - property: numCircles
     name: Number of circles
     type: number
-
-data:
-  - key: label
-    name: Label
-    dataset: fruits
-    type: column
-    column: "Fruits::A"
-  - key: value
-    name: Value
-    dataset: fruits
-    type: column
-    column: "Fruits::B"
