@@ -1,8 +1,8 @@
-import commonjs from '@rollup/plugin-commonjs'
+import commonjs from "@rollup/plugin-commonjs"
 import { nodeResolve } from "@rollup/plugin-node-resolve"
-import replace from '@rollup/plugin-replace'
+import replace from "@rollup/plugin-replace"
 import { terser } from "rollup-plugin-terser"
-import vue from 'rollup-plugin-vue'
+import vue from "rollup-plugin-vue"
 
 export default {
   input: "src/index.js",
@@ -10,16 +10,16 @@ export default {
     format: "iife",
     name: "template",
     file: "template.js",
-    sourcemap: true,
+    sourcemap: true
   },
   plugins: [
     replace({
-      'process.env.NODE_ENV': JSON.stringify('production')
+      "process.env.NODE_ENV": JSON.stringify("production")
     }),
     nodeResolve(),
     vue(),
     commonjs(),
-    terser(),
+    terser()
   ],
   /* Cyclic dependencies are allowed in ES6, and such imports occur
      in many d3 components, so suppress those rollup warnings. */
